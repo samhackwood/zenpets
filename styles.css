@@ -226,30 +226,46 @@ body {
 
   header {
     text-align: center;
-    padding: 20px;
+    padding: 10px; /* Remove padding if needed */
   }
   
   nav {
-    margin-top: 20px;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 0; /* Optional: Adjust padding to your liking */
   }
   
   .nav-links {
+    display: flex;
+    justify-content: space-between;
     list-style: none;
     padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 1200px; /* Optional: Add a max width */
+    margin: auto; /* Center the links horizontally */
   }
   
   .nav-links li {
-    display: inline-block;
-    margin: 0 15px;
+    margin: 0;
+  }
+  
+  .nav-links li:last-child {
+    border-right: none; /* Remove border from the last item */
   }
   
   .nav-links a {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    padding: 10px;
   }
   
   .nav-links a:hover {
     color: #007BFF;
     transition: color 0.3s;
   }
+  
